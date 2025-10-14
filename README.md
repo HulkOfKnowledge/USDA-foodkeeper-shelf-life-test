@@ -1,13 +1,13 @@
 # USDA FoodKeeper Shelf Life Test
 
 
-## 🎯 Hypothesis
+## Hypothesis
 
 We believe that expiration dates for fresh food produce can be estimated using the open-source USDA FoodKeeper database.
 
 **Success Criteria:** FoodKeeper provides mapping for at least 80% of tested food items.
 
-## 📊 Test Results
+## Test Results
 
 The system tests **50 diverse food items** across major categories:
 - Dairy Products & Eggs
@@ -20,7 +20,7 @@ The system tests **50 diverse food items** across major categories:
 - Beverages
 - Pantry Staples
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -46,7 +46,7 @@ python test_shelf_life.py
 Simply run the script with the FoodKeeper JSON file in the same directory:
 
 ```bash
-python test_foodkeeper.py
+python test_shelf_life.py
 ```
 
 ### Output
@@ -130,18 +130,7 @@ The testing process follows these steps:
 3. **Test Execution**: Search for each test item using multiple strategies
 4. **Result Analysis**: Calculate match rates and statistics
 5. **Report Generation**: Create results json
-
-## 📊 Data Source
-
-This project uses the **USDA FoodKeeper Database**, a trusted government resource for food storage guidelines.
-
-- **Source**: U.S. Department of Agriculture (USDA)
-- **Maintained by**: Food Safety and Inspection Service (FSIS)
-- **License**: Public Domain (U.S. Government Work)
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+   
 
 The USDA FoodKeeper data is in the public domain as a U.S. Government work.
 
