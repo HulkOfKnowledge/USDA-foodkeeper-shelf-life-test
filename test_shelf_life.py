@@ -262,7 +262,7 @@ class TestRunner:
         """Generate a detailed test report"""
         report = []
         report.append("=" * 80)
-        report.append("USDA FoodKeeper Database Mapping Test Report")
+        report.append("USDA FoodKeeper Shelf-Life Mapping Test Report")
         report.append("=" * 80)
         report.append(f"\nTest Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         report.append(f"\nHypothesis: FoodKeeper provides mapping for at least 80% of tested items")
