@@ -1,6 +1,6 @@
 """
-USDA FoodKeeper Database Mapping Test System
-Tests hypothesis: Can estimate expiration dates for 80% of common food items
+USDA FoodKeeper Database Shelf-Life Test
+Tests hypothesis: We believe that the expiration dates for fresh food produce can be estimated using an open-source shelf-life database
 """
 
 import json
@@ -8,7 +8,6 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass, asdict
 from datetime import datetime
-import re
 
 
 @dataclass
@@ -31,7 +30,7 @@ class MatchResult:
     
 
 class FoodKeeperDB:
-    """Handles USDA FoodKeeper database operations with caching"""
+    """Handles USDA FoodKeeper json with caching"""
     
     def __init__(self, json_path: str):
         self.json_path = Path(json_path)
